@@ -4,7 +4,9 @@ import 'package:semana_arch/app/shared/services/local-storage/local_storage_inte
 class ChangeThemeViewModel {
   final ILocalStorage storage;
 
-  ChangeThemeViewModel(this.storage);
+  ChangeThemeViewModel({
+    required this.storage,
+  });
 
   final AppConfigModel config = AppConfigModel();
 

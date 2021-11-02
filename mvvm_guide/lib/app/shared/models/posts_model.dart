@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 class PostsModel {
-  final int userId;
-  final int id;
-  final String title;
-  final String body;
+  final int? userId;
+  final int? id;
+  final String? title;
+  final String? body;
 
   PostsModel({
     this.userId,

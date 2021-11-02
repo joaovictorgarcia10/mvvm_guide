@@ -14,9 +14,10 @@ class AppController {
 
   // Instância do Model
   final ChangeThemeViewModel changeThemeViewModel =
-      ChangeThemeViewModel(SharedLocalStorageService());
+      ChangeThemeViewModel(storage: SharedLocalStorageService());
 
   bool get isDark => changeThemeViewModel.config.themeSwitch.value;
+
   ValueNotifier<bool> get themeSwitch =>
       changeThemeViewModel.config.themeSwitch;
 

@@ -13,6 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  //
   final controller = HomeController(
     postsViewModel: PostsViewModel(
       repository: PostRespository(
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                         var post = model[index];
                         return ListTile(
                           leading: Text(post.id.toString()),
-                          title: Text(post.title),
+                          title: Text(post.title!),
                           trailing: IconButton(
                             icon: Icon(Icons.navigate_next_outlined),
                             onPressed: () {},

@@ -6,7 +6,7 @@ class HomeController {
   final PostsViewModel postsViewModel;
 
   HomeController({
-    this.postsViewModel,
+    required this.postsViewModel,
   });
 
   ValueNotifier<List<PostsModel>> get posts => postsViewModel.postsList;

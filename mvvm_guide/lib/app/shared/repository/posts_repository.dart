@@ -6,7 +6,7 @@ class PostRespository implements IPostsRepository {
   final IClientDio clientDio;
 
   PostRespository({
-    this.clientDio,
+    required this.clientDio,
   });
 
   @override

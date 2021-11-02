@@ -8,7 +8,7 @@ class PostsViewModel {
   final postsList = ValueNotifier<List<PostsModel>>([]);
 
   PostsViewModel({
-    this.repository,
+    required this.repository,
   });
 
   Future fillPostsList() async {
